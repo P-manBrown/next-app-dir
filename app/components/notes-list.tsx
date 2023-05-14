@@ -12,8 +12,8 @@ async function fetchNotes() {
     headers: new Headers({
       apikey: process.env.apikey as string,
     }),
-    // cache: にはforce-cache(デフォルト), no-storeを使用できる)
-    cache: 'force-cache',
+    // cache: にはforce-cache(デフォルト), no-storeを使用できる
+    cache: 'no-store',
     // nextにはrevalidateを設定できる
     //next: { revalidate: 10 },
   })
